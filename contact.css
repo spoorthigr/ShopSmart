@@ -1,0 +1,189 @@
+/* Ensure consistent box-sizing */
+* {
+    box-sizing: border-box;
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, sans-serif; /* Added a font-family for better typography */
+}
+
+/* Header styles */
+header {
+    background-color: #b0c1d1;
+    color: white;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    top: 0; /* Ensure the header is at the top */
+    z-index: 1000; /* Ensure header is above other content */
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto; /* Center the header container */
+    padding: 0 20px; /* Add padding to the sides */
+}
+
+.logo-name {
+    display: flex;
+    align-items: center;
+}
+
+.logo-name a h1 {
+    color: black;
+}
+
+.logo-name a {
+    text-decoration: none;
+}
+
+.logo-name a h1:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(63, 90, 105, 0.2);
+}
+
+.logo {
+    height: 50px;
+    margin-right: 10px;
+    border-radius: 30%;
+}
+
+header h1 {
+    margin: 0;
+}
+
+header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+header nav ul li {
+    margin-left: 20px;
+}
+
+header nav ul li a {
+    color: black;
+    text-decoration: none;
+    transition: color 0.3s; /* Smooth color transition */
+}
+
+header nav ul li a:hover {
+    color:  #13252b; 
+}
+
+
+/* Footer styles */
+footer {
+    background-color: #b0c1d1;
+    color: black;
+    text-align: center;
+    padding: 10px 20px;
+    margin-top: auto; /* Ensure footer stays at the bottom */
+    height: 80px;
+}
+
+.container img {
+    height: 100px;
+    margin-left: 50%; /* Center image horizontally */
+    transform: translateX(-50%); /* Correct centering */
+    display: block; 
+}
+
+.footer-container a, p {
+    color: black; 
+    font-weight: bold;
+}
+
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+    padding-top: 80px; 
+    padding-bottom: 80px; 
+    width: 100%;
+}
+
+.contact-block {
+    background-color: #b0c1d1;
+    padding: 20px;
+    border-radius: 10px; 
+    width: 100%;
+    max-width: 600px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.contact-block h2 {
+    margin-bottom: 20px; 
+    color: black;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group {
+    margin-bottom: 15px;
+    color: #37525a;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.form-group input, .form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.form-group textarea {
+    resize: vertical;
+}
+
+.submit-button {
+    background-color: rgb(113, 132, 149);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s;
+}
+
+.submit-button:hover {
+    background-color: #406773;
+}
+
+.contact-info {
+    margin-top: 20px;
+    text-align: left;
+}
+
+.contact-info h3 {
+    margin-top: 20px;
+    font-size: 1.2em;
+    color:  rgb(113, 132, 149);
+}
+
+.contact-info p {
+    margin: 5px 0;
+    color:  rgb(87, 101, 113)
+}

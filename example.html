@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        td{
+            border: 2px solid black;
+        }
+    </style>
+</head>
+
+<body>
+    <table>
+    </table>
+
+    <script>
+        onload = fetch("./final_price.csv").then(res => {
+            return res.text()
+        }).then(data => {
+            let result = data.split(/\r?\n|\r/).map
+            (e=>{
+                return e.split(",")
+            })
+            result.forEach(e => {
+                let m = e.map(e => {
+                    return `<td>${e}</td>`;
+                }).join(" ")
+                let ce = document.createElement
+                ("tr");
+                ce.innerHTML = m;
+                if(ce.innerText != ""){
+                    document.querySelector("table").
+                appendChild(ce);
+                }
+                console.log(m);
+            })
+        })
+    </script>
+</body>
+</html>

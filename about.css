@@ -1,0 +1,129 @@
+/* Ensure consistent box-sizing */
+* {
+    box-sizing: border-box;
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, sans-serif; /* Added a font-family for better typography */
+}
+
+/* Header styles */
+header {
+    background-color: #b0c1d1;
+    color: black;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    top: 0; /* Ensure the header is at the top */
+    z-index: 1000; /* Ensure header is above other content */
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto; /* Center the header container */
+    padding: 0 20px; /* Add padding to the sides */
+}
+
+.logo-name {
+    display: flex;
+    align-items: center;
+}
+
+.logo-name a h1 {
+    color: black;
+}
+
+.logo-name a {
+    text-decoration: none;
+}
+
+
+.logo {
+    height: 50px;
+    margin-right: 10px;
+    border-radius: 30%;
+}
+
+.logo-name a h1:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(63, 90, 105, 0.2);
+}
+
+header h1 {
+    margin: 0;
+}
+
+header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+header nav ul li {
+    margin-left: 20px;
+}
+
+header nav ul li a {
+    color: black;
+    text-decoration: none;
+    transition: color 0.3s; /* Smooth color transition */
+}
+
+header nav ul li a:hover {
+    color:  #13252b; 
+}
+
+
+/* Footer styles */
+footer {
+    background-color: #b0c1d1;
+    color: black;
+    text-align: center;
+    padding: 10px 20px;
+    margin-top: auto; /* Ensure footer stays at the bottom */
+    height: 80px;
+}
+
+.footer-container a, p {
+    color: black;
+    font-weight: bold;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+    padding-top: 80px; 
+    padding-bottom: 80px; 
+}
+
+.about-block {
+    background-color: #b5c7d8; 
+    padding: 20px;
+    border-radius: 10px;
+    width: 1000px;
+    max-width: 800px;
+    text-align: center;
+    height: 700px;
+}
+
+.about-block h2 {
+    margin-bottom: 20px;
+    color: black; 
+}
+
+.about-block p {
+    line-height: 1.6;
+    text-align: justify;
+    color: black;
+}

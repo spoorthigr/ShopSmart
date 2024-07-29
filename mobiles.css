@@ -1,0 +1,176 @@
+* {
+    box-sizing: border-box;
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, sans-serif; 
+}
+
+/* Header styles */
+header {
+    background-color: #b0c1d1;
+    color: white;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    top: 0; 
+    z-index: 1000; 
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 100%; /* Ensure it uses full width */
+    padding: 0 20px; 
+    box-sizing: border-box;
+}
+
+.logo-name {
+    display: flex;
+    align-items: center;
+}
+
+.logo-name a h1 {
+    color: black;
+}
+
+.logo-name a {
+    text-decoration: none;
+}
+
+.logo-name a h1:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(63, 90, 105, 0.2);
+}
+
+.logo {
+    height: 50px;
+    margin-right: 10px;
+    border-radius: 30%;
+}
+
+header h1 {
+    margin: 0;
+}
+
+header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+header nav ul li {
+    margin-left: 20px;
+}
+
+header nav ul li a {
+    color: black;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+header nav ul li a:hover {
+    color: #13252b; 
+}
+
+/* Container Block */
+.container {
+    padding: 20px;
+    width : 1100px;
+    background-color: #b0c1d1;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    margin-top: 100px; /* Adjust this value to move down */
+    margin-left: auto; /* Adjust this value to move right */
+    margin-right: auto; /* Adjust this value to move left */
+    margin-bottom: 20px; /* Adjust this value to move up */
+}
+
+.popular-brands {
+    text-align: center;
+    margin: 20px 0; /* Removed auto for full width */
+    padding: 20px;
+    background-color: #9eb9d1;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%; /* Use full width */
+}
+
+.popular-brands h2 {
+    font-size: 2.5rem; /* Increased font size */
+    margin-bottom: 30px;
+    color: #333;
+}
+
+.popular-brands ul {
+    list-style: none;
+    display: grid; /* Grid layout */
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive grid */
+    gap: 20px;
+    padding: 0;
+    width: 100%; /* Use full width */
+}
+
+.popular-brands ul li {
+    background-color: #eaebeb;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 30px 20px; /* Increased padding */
+    color: black;
+    font-size: 1.2rem; /* Increased font size */
+    transition: transform 0.3s, box-shadow 0.3s; /* Smooth transitions */
+}
+
+.popular-brands ul li:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(63, 90, 105, 0.2);
+}
+
+.popular-brands ul li a {
+    color: #333;
+    font-weight: bold;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+}
+
+.popular-brands a {
+    text-decoration: none;
+}
+
+.popular-brands a img {
+    height: 90px;
+    width: 90px;
+    margin-right: 10px;
+    border-radius: 30%;
+}
+
+.popular-brands a p {
+    color: black;
+}
+
+
+/* Footer styles */
+footer {
+    background-color: #b0c1d1;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: auto;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.footer-container a, p {
+    color: white;
+    font-weight: bold;
+    margin: 5px 0; /* Added margin for spacing */
+}

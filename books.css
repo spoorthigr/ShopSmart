@@ -1,0 +1,145 @@
+* {
+    box-sizing: border-box;
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, sans-serif; 
+}
+
+/* Header styles */
+header {
+    background-color: #b0c1d1;
+    color: white;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    top: 0; 
+    z-index: 1000; 
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto; 
+    padding: 0 20px; 
+}
+
+.logo-name {
+    display: flex;
+    align-items: center;
+}
+
+.logo-name a h1 {
+    color: white;
+}
+
+.logo-name a {
+    text-decoration: none;
+}
+
+.logo-name a h1:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(63, 90, 105, 0.2);
+}
+
+.logo {
+    height: 50px;
+    margin-right: 10px;
+    border-radius: 30%;
+}
+
+header h1 {
+    margin: 0;
+}
+
+header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+header nav ul li {
+    margin-left: 20px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s; /* Smooth color transition */
+}
+
+header nav ul li a:hover {
+    color:  #13252b; 
+}
+
+/* Footer styles */
+footer {
+    background-color: #b0c1d1;
+    color: white;
+    text-align: center;
+    padding: 10px 20px;
+    margin-top: auto;
+    height: 80px;
+}
+
+.footer-container a, p {
+    color: white;
+    font-weight: bold;
+}
+
+
+/* General styling for the container */
+.container {
+    width: 50%;              
+    min-height: 80vh;        
+    margin: 0 auto;         
+    padding: 20px;            
+    box-sizing: border-box;   
+    padding-top: 150px; 
+}
+  
+  
+.popular-genres {
+    border: 1px solid #ccc;   
+    padding: 20px;          
+    background-color: #98b0c6;
+    border-radius: 5px;      
+}
+  
+.popular-genres h2 {
+    margin-bottom: 10px;      
+    font-size: xx-large;
+    text-align: center;
+    color: white;
+}
+  
+.popular-genres ul {
+    list-style-type: none;   
+    padding-left: 20px;       
+}
+  
+.popular-genres li {
+    margin-bottom: 17px;      
+    font-size: large;
+    text-align: center;
+    color: white;
+    gap: 10;
+}
+
+.popular-genres a {
+    text-decoration: none;
+}
+
+.popular-genres ul li:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(63, 90, 105, 0.2);
+    background-color: #6b88a3;
+}

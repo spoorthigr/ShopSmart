@@ -1,0 +1,126 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.header-container {
+    background-color: #b0c1d1;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+}
+
+.logo-name {
+    display: flex;
+    align-items: center;
+}
+
+.logo-name a h1 {
+    color: white;
+}
+
+.logo-name a {
+    text-decoration: none;
+}
+
+.logo-name a h1:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(63, 90, 105, 0.2);
+}
+
+.logo {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+    border-radius: 30%;
+}
+
+header nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+header nav ul li {
+    margin: 0 10px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+header nav ul li a:hover {
+    color: #233f47;
+}
+
+.container {
+    padding: 20px;
+}
+
+section {
+    margin: 0;
+    margin-bottom: 45px;
+}
+  
+.book-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 20px;
+    padding-bottom: 20px;
+}
+  
+.book-card {
+    display: flex;
+    background-color:#b0c1d1;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    border: 1px solid #ccc;
+    padding: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+  
+.book-card img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+  
+.book-card p {
+    margin: 10px 0 0;
+    font-size: 16px;
+    word-wrap: break-word;
+    width: 100%;
+}
+  
+.book-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(63, 90, 105, 0.2);
+}
+
+.footer-container {
+    background-color: #b0c1d1;
+    text-align: center;
+    padding: 10px 20px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer-container p {
+    margin: 5px 0;
+}
+
+.footer-container a {
+    text-decoration: none;
+    color: white;
+}
+
+.footer-container a:hover {
+    text-decoration: underline;
+}

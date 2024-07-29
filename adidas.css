@@ -1,0 +1,186 @@
+/* nike.css */
+
+* {
+      box-sizing: border-box;
+  }
+  
+  .icon {
+      border-radius: 50%;
+  }
+  
+  body, html {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      font-family: Arial, sans-serif;
+      background-color: #f8f9fa; /* Light gray background */
+  }
+  
+  /* Header styles */
+  header {
+      background-color: #b0c1d1; /* Light gray background */
+      color: #333333; /* Dark gray text */
+      padding: 10px 0;
+      position: fixed;
+      width: 100%;
+      top: 0;
+      z-index: 1000;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  }
+  
+  /* Main content area */
+  .main-content {
+      flex: 1; /* Take up remaining space */
+      padding-top: 80px; /* Ensure content is not hidden behind fixed header */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding-bottom: 80px;
+  }
+  
+  /* Footer styles */
+  footer {
+      background-color: #b0c1d1; /* Light gray background */
+      color: #333333; /* Dark gray text */
+      text-align: center;
+      padding: 10px 20px;
+      height: 80px;
+      box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+      flex-shrink: 0; /* Prevent the footer from shrinking */
+  }
+  
+  .header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.logo-name {
+    display: flex;
+    align-items: center;
+}
+
+.logo-name a h1 {
+    color: #333333; /* Dark gray text */
+}
+
+.logo-name a {
+    text-decoration: none;
+}
+
+.logo-name a h1:hover {
+    transform: scale(1.05);
+    text-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); /* Subtle shadow for text */
+}
+
+.logo {
+    height: 50px;
+    margin-right: 10px;
+    border-radius: 30%;
+}
+
+header h1 {
+    margin: 0;
+}
+
+header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+header nav ul li {
+    margin-left: 20px;
+}
+
+header nav ul li a {
+    color: #333333; /* Dark gray text */
+    text-decoration: none;
+    transition: color 0.3s;
+    font-weight: bold;
+    font-size: large;
+}
+
+header nav ul li a:hover {
+    color: #33393f; /* Soft blue for hover effect */
+}
+  
+  .footer-container a, p {
+      color: #333333; /* Dark gray text */
+      font-weight: bold;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+  }
+  
+  .footer-container .privacy {
+      align-items: center;
+  }
+  
+  .container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      padding: 20px;
+      max-width: 800px;
+  }
+  
+  .shoe {
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      width: calc(50% - 20px);
+      text-align: center;
+      padding: 10px;
+      background-color: #dae6f3; /* White background */
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Light shadow */
+      transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .shoe:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Darker shadow on hover */
+  }
+  
+  .shoe h2 {
+      font-size: 1.2em;
+      margin: 10px 0;
+  }
+  
+  .price-container {
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+  }
+
+  .price-container a {
+      text-decoration: none;
+  }
+
+  
+  .price {
+      color: #888888; /* Lighter gray text */
+      font-size: 1em;
+      margin: 5px 0;
+  }
+    
+  .price :hover {
+    color: #33393f;
+    text-decoration: underline;
+}
+  
+  .shoe-img {
+      width: 100%;
+      height: 300px; /* Fixed height for all images */
+      object-fit: cover; /* Ensure the image covers the area without distortion */
+      border-bottom: 1px solid #ddd;
+      padding-bottom: 10px;
+      margin-bottom: 10px;
+  }
+  

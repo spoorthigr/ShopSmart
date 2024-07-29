@@ -1,0 +1,213 @@
+/* General styles */
+body {
+      font-family: 'Roboto', sans-serif;
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+  }
+  
+  .header-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 20px;
+      background-color: #b0c1d1;
+      color: #fff;
+  }
+
+  nav ul {
+      list-style: none;
+      display: flex;
+      margin: 0;
+      padding: 0;
+  }
+  
+  nav ul li {
+      margin-left: 20px;
+  }
+  
+  nav ul li a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: 700;
+  }
+  
+  .container {
+      padding: 20px;
+  }
+  
+  h2 {
+      text-align: center;
+      margin-bottom: 20px;
+  }
+  
+  .product-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      gap: 20px;
+  }
+  
+  .product-card {
+      background: #f9f9f9;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+      transition: transform 0.2s;
+  }
+  
+  .product-card:hover {
+      transform: scale(1.02);
+  }
+  
+  .product-card table {
+      width: 100%;
+  }
+  
+  .product-card .image {
+      text-align: center;
+      padding: 20px;
+  }
+  
+  .product-card .product-image {
+      width: 100px;
+      height: auto;
+      margin-bottom: 10px;
+  }
+  
+  .product-name {
+      font-weight: 700;
+      margin: 0;
+  }
+  
+  .product-description table {
+      width: 100%;
+      margin: 10px 0;
+  }
+  
+  .product-description td {
+      padding: 10px;
+      text-align: center;
+  }
+  
+  .aditya a {
+      color: #333;
+      text-decoration: none;
+  }
+  
+  .aditya a:hover {
+      text-decoration: underline;
+  }
+  
+  /* Adjust the footer container styles */
+  .footer-container {
+      background-color: #b0c1d1;
+      text-align: center;
+      padding: 5px 10px; /* Decreased padding */
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+      font-size: 0.8rem; /* Decreased font size */
+    }
+    
+    /* Adjust the paragraph margins and link styles in the footer */
+    .footer-container p {
+      color: white;
+      margin: 2px 0; /* Decreased margin */
+    }
+    
+    .footer-container a {
+      text-decoration: none;
+      color: white;
+    }
+    
+    .footer-container a:hover {
+      text-decoration: underline;
+    }
+    
+  
+  /* Add these styles to your existing CSS file */
+  
+  /* Ensure the product container uses a flex layout */
+  .product-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px; /* Adjust the gap between items if needed */
+    }
+    
+    /* Adjust product card width for three items per row */
+    .product-card {
+      flex: 0 1 calc(33.333% - 10px); /* Three items per row with a 10px gap */
+      box-sizing: border-box;
+      margin-bottom: 20px;
+    }
+    
+  
+  /* Adjust the header container styles */
+  .header-container {
+      background-color: #b0c1d1;
+      padding: 8px 16px; /* Decreased padding */
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: 40px; /* Decreased height */
+    }
+    
+    /* Adjust the navigation link styles */
+    header nav ul li a {
+      text-decoration: none;
+      color: black;
+      font-size: 0.9rem; /* Slightly decreased font size */
+    }
+    
+    /* Adjust the navigation link hover styles */
+    header nav ul li a:hover {
+      color: #233f47;
+    }
+    .logo-name {
+      display: flex;
+      align-items: center;
+  }
+  
+  .logo-name a h1 {
+      color: #333333; /* Dark gray text */
+  }
+  
+  .logo-name a {
+      text-decoration: none;
+  }
+  
+  .logo-name a h1:hover {
+      transform: scale(1.05);
+      text-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); /* Subtle shadow for text */
+  }
+  
+  .logo {
+      height: 50px;
+      margin-right: 10px;
+      border-radius: 30%;
+  }
+  
+  
+    /* Styles for product name */
+  .product-name {
+      font-weight: 700;
+      font-size: 1.1rem; /* Slightly larger font size */
+      color: #333; /* Dark color for better readability */
+      margin: 0;
+      text-align: center; /* Center align the product name */
+      padding: 5px 0; /* Add vertical padding */
+  }
+  
+  /* Styles for product price */
+  .product-description td {
+      padding: 10px;
+      text-align: center;
+      font-size: 1rem; /* Set a base font size for price */
+  }
+  
+  /* Specific styles for price cells */
+  .product-description td[id^="price-"] {
+      font-weight: bold;
+      color: #e74c3c; /* Use a distinct color for prices */
+  }
+  

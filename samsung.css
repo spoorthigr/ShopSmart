@@ -1,0 +1,160 @@
+/* General styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 16px; /* Adjusted padding */
+    background-color: #b0c1d1;
+    color: #fff;
+    height: 40px; /* Adjusted height */
+}
+
+.logo-name {
+    display: flex;
+    align-items: center;
+}
+
+.logo-name a h1 {
+    color: black;
+    font-size: 1.2rem; /* Adjusted font size */
+    text-decoration: none;
+}
+
+.logo-name a h1:hover {
+    transform: scale(1.05);
+    text-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); /* Subtle shadow for text */
+}
+
+.logo {
+    width: 40px; /* Adjusted logo size */
+    height: 40px; /* Adjusted logo size */
+    margin-right: 10px;
+    border-radius: 30%;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: black; /* Adjusted color */
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 0.9rem; /* Adjusted font size */
+}
+
+nav ul li a:hover {
+    color: #233f47;
+}
+
+.container {
+    padding: 20px;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.product-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.product-card {
+    background: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.2s;
+    flex: 0 1 calc(33.333% - 10px); /* Three items per row */
+    box-sizing: border-box;
+    margin-bottom: 20px;
+}
+
+.product-card:hover {
+    transform: scale(1.02);
+}
+
+.product-card table {
+    width: 100%;
+}
+
+.product-card .image {
+    text-align: center;
+    padding: 20px;
+}
+
+.product-card .product-image {
+    width: 100px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.product-name {
+    font-weight: 700;
+    font-size: 1.1rem; /* Slightly larger font size */
+    color: #333; /* Dark color for better readability */
+    margin: 0;
+    text-align: center; /* Center align the product name */
+    padding: 5px 0; /* Add vertical padding */
+}
+
+.product-description table {
+    width: 100%;
+    margin: 10px 0;
+}
+
+.product-description td {
+    padding: 10px;
+    text-align: center;
+    font-size: 1rem; /* Set a base font size for price */
+}
+
+.aditya a {
+    color: #333;
+    text-decoration: none;
+}
+
+.aditya a:hover {
+    text-decoration: underline;
+}
+
+.footer-container {
+    background-color: #b0c1d1;
+    text-align: center;
+    padding: 5px 10px; /* Decreased padding */
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    font-size: 0.8rem; /* Decreased font size */
+}
+
+.footer-container p {
+    color: white;
+    margin: 2px 0; /* Decreased margin */
+}
+
+.footer-container a {
+    text-decoration: none;
+    color: white;
+}
+
+.footer-container a:hover {
+    text-decoration: underline;
+}
